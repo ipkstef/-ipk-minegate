@@ -10,7 +10,8 @@ jobs:
       - name: Do we need to Build?
         run: |
           if ! [ git diff --exit-code docker-compose.yaml ]; then
-            exit
+            exit;
+          fi
           
           
   build:
