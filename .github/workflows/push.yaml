@@ -4,16 +4,17 @@ jobs:
   mvp-check:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
       - name: Do we need to Build?
         run: |
           git diff --exit-code docker-compose.yaml
+          
   build:
     needs: mvp-check
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
       - name: Build docker images
         run: docker-compose build
 
