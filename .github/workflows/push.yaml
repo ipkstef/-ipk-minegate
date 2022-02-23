@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Do we need to Build?
         run: |
-          git diff --exit-code test docker-compose.yaml
+          git diff --exit-code docker-compose.yaml
   build:
     needs: mvp-check
     runs-on: ubuntu-latest
