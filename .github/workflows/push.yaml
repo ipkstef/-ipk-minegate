@@ -1,9 +1,14 @@
 name: Docker Compose Actions Workflow
 on: push
-paths:
-- 'docker-compose.yaml'
 jobs:
-  test:
+  mvp-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do we need to Build?
+        run: |
+          git diff --exit-code test docker-compose.yaml
+  build:
+    needs: mvp-check
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
