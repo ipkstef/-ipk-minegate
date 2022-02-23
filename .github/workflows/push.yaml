@@ -9,7 +9,9 @@ jobs:
         
       - name: Do we need to Build?
         run: |
-          git diff --exit-code docker-compose.yaml
+          if ! [ git diff --exit-code docker-compose.yaml ]; then
+            exit
+          
           
   build:
     needs: mvp-check
