@@ -14,5 +14,5 @@ jobs:
         run: docker-compose up -d
 
       - name: Test
-        run: docker ps -a --format "table {{.Names}}" | grep "ipk-minegate_mc_2"
+        run: docker ps -a --format "table {{.Names}}" | grep "ipk-minegate_mc_1"
 
