@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  mc:
+    image: itzg/minecraft-server
+    ports:
+      - 25565:25565
+    environment:
+      EULA: "TRUE"
+      TYPE: "FORGE"
+      FORGEVERSION: "14.23.5.2854"
+      VERSION: "1.12.2"
+      MEMORY: "3G"
+    volumes:
+      - ./data:/data
+
+    tty: true
+    stdin_open: true
+    restart: unless-stopped
+
+
