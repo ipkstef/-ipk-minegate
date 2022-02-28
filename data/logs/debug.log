@@ -4704,3 +4704,217 @@ MalisisCore: Requires version 1.12.2-6.5.3-SNAPSHOT but mod is not found on clie
 
 [05:06:52] [Server thread/DEBUG] [FML]: The world 7a426a0e (world) may have leaked: seen 55 times.
 
+[05:07:27] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:08:12] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:08:25] [Server thread/TRACE] [FML]: Handshake channel activating
+[05:08:25] [Server thread/DEBUG] [FML]: FMLHandshakeServerState: null->FMLHandshakeServerState$1:START
+[05:08:25] [Server thread/DEBUG] [FML]:   Next: HELLO
+[05:08:25] [Netty Epoll Server IO #9/DEBUG] [FML]: FMLHandshakeServerState: $ClientHello->FMLHandshakeServerState$2:HELLO
+[05:08:25] [Netty Epoll Server IO #9/INFO] [FML]: Client protocol version 2
+[05:08:25] [Netty Epoll Server IO #9/DEBUG] [FML]: FMLHandshakeServerState: $ModList:6 mods->FMLHandshakeServerState$2:HELLO
+[05:08:25] [Netty Epoll Server IO #9/INFO] [FML]: Client attempting to join with 6 mods : minecraft@1.12.2,malisiscore@1.12.2-6.5.3-SNAPSHOT,FML@8.0.99.99,sgcraft@2.0.3,forge@14.23.5.2768,mcp@9.42
+[05:08:25] [Netty Epoll Server IO #9/DEBUG] [FML]:   Next: WAITINGCACK
+[05:08:25] [Netty Epoll Server IO #9/DEBUG] [FML]: FMLHandshakeServerState: $HandshakeAck:{2}->FMLHandshakeServerState$3:WAITINGCACK
+[05:08:25] [Netty Epoll Server IO #9/DEBUG] [FML]:   Next: COMPLETE
+[05:08:28] [Netty Epoll Server IO #9/DEBUG] [FML]: FMLHandshakeServerState: $HandshakeAck:{3}->FMLHandshakeServerState$4:COMPLETE
+[05:08:28] [Netty Epoll Server IO #9/DEBUG] [FML]:   Next: DONE
+[05:08:28] [Netty Epoll Server IO #9/DEBUG] [FML]: FMLHandshakeServerState: $HandshakeAck:{4}->FMLHandshakeServerState$5:DONE
+[05:08:28] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[05:08:28] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: ipk[/100.36.131.81:1705] logged in with entity id 436 at (161.99867797416638, 64.0, 15.361170000522877)
+[05:08:28] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: ipk joined the game
+[05:08:28] [Netty Epoll Server IO #9/DEBUG] [FML]: FMLHandshakeServerState: $HandshakeAck:{5}->FMLHandshakeServerState$5:DONE
+[05:08:36] [RCON Listener #1/INFO] [net.minecraft.server.MinecraftServer]: Rcon connection from: /127.0.0.1
+[05:08:36] [RCON Client #2/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [Rcon: Opped ipk]
+[05:08:57] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:09:10] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Creative Mode]
+[05:09:42] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:10:27] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:10:48] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=203, y=66, z=2}
+[05:10:49] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=203, y=67, z=2}
+[05:10:50] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=203, y=67, z=1}
+[05:10:51] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=203, y=67, z=0}
+[05:10:51] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=203, y=67, z=-1}
+[05:10:53] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=203, y=68, z=-1}
+[05:10:56] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=203, y=68, z=2}
+[05:10:57] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=204, y=68, z=2}
+[05:11:12] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:11:57] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:12:42] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:13:27] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:14:12] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:14:37] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=203, y=67, z=0}
+[05:14:50] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=202, y=66, z=-1}
+[05:14:52] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=203, y=66, z=-1}
+[05:14:54] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=203, y=66, z=2}
+[05:14:57] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:15:42] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:16:27] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:17:12] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:17:51] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=204, y=67, z=1}
+[05:17:57] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:18:42] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:19:27] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:20:12] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:20:49] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=205, y=68, z=1}
+[05:20:57] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:21:42] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:22:27] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:23:12] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:23:57] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:24:42] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:25:27] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:26:12] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:26:57] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:27:42] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:28:27] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:28:32] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Survival Mode]
+[05:28:53] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Creative Mode]
+[05:29:12] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:29:57] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:30:42] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:31:27] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:32:12] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:32:57] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:33:42] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:34:27] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:35:12] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:35:43] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Teleported ipk to 1.5, 1.0, 1.5]
+[05:35:53] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Teleported ipk to 15.5, 15.0, 15.5]
+[05:35:57] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:36:42] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:37:27] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:38:15] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 3194ms behind, skipping 63 tick(s)
+[05:38:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:38:58] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:39:00] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=-393, y=78, z=204}
+[05:39:43] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:40:28] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:41:13] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:41:58] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:42:43] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:43:28] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:44:13] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:44:58] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:45:43] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:46:28] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:47:13] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:47:58] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:48:30] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 2798ms behind, skipping 55 tick(s)
+[05:48:44] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:49:29] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:50:09] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=-1032, y=74, z=146}
+[05:50:14] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:50:59] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:51:44] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:52:29] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:53:14] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:53:59] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:54:44] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:55:29] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:56:14] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:56:59] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:57:44] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:58:29] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:59:14] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[05:59:59] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:00:44] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:01:29] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:02:14] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:02:39] [Server thread/WARN] [net.minecraft.server.MinecraftServer]: Can't keep up! Did the system time change, or is the server overloaded? Running 3313ms behind, skipping 66 tick(s)
+[06:03:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:03:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:04:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:05:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:06:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:06:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:07:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:08:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:09:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:09:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:10:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:11:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:12:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:12:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:13:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:14:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:15:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:15:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:16:15] [Server thread/INFO] [STDOUT]: [gcewing.sg.block.SGBaseBlock:func_176213_c:117]: STARGATE Base block added on world: world at: BlockPos{x=-561, y=92, z=34}
+[06:16:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:17:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:18:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:18:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:19:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:20:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:21:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:21:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:22:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:23:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:24:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:24:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:25:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:26:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:27:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:27:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:28:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:29:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:30:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:30:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:31:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:32:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:32:58] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set the time to 13000]
+[06:33:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:33:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:33:59] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Survival Mode]
+[06:34:29] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set the time to 13000]
+[06:34:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:35:00] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Creative Mode]
+[06:35:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:36:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:36:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:37:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:38:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:39:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:39:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:40:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:40:32] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Survival Mode]
+[06:40:43] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Creative Mode]
+[06:41:10] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Survival Mode]
+[06:41:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:41:25] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Creative Mode]
+[06:41:49] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Survival Mode]
+[06:42:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:42:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:43:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:43:52] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Creative Mode]
+[06:44:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:44:38] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Survival Mode]
+[06:45:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:45:13] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: ipk lost connection: Disconnected
+[06:45:13] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: ipk left the game
+[06:45:18] [Server thread/TRACE] [FML]: Handshake channel activating
+[06:45:18] [Server thread/DEBUG] [FML]: FMLHandshakeServerState: null->FMLHandshakeServerState$1:START
+[06:45:18] [Server thread/DEBUG] [FML]:   Next: HELLO
+[06:45:19] [Netty Epoll Server IO #9/DEBUG] [FML]: FMLHandshakeServerState: $ClientHello->FMLHandshakeServerState$2:HELLO
+[06:45:19] [Netty Epoll Server IO #9/INFO] [FML]: Client protocol version 2
+[06:45:19] [Netty Epoll Server IO #9/DEBUG] [FML]: FMLHandshakeServerState: $ModList:6 mods->FMLHandshakeServerState$2:HELLO
+[06:45:19] [Netty Epoll Server IO #9/INFO] [FML]: Client attempting to join with 6 mods : minecraft@1.12.2,malisiscore@1.12.2-6.5.3-SNAPSHOT,FML@8.0.99.99,sgcraft@2.0.3,forge@14.23.5.2768,mcp@9.42
+[06:45:19] [Netty Epoll Server IO #9/DEBUG] [FML]:   Next: WAITINGCACK
+[06:45:19] [Netty Epoll Server IO #9/DEBUG] [FML]: FMLHandshakeServerState: $HandshakeAck:{2}->FMLHandshakeServerState$3:WAITINGCACK
+[06:45:19] [Netty Epoll Server IO #9/DEBUG] [FML]:   Next: COMPLETE
+[06:45:20] [Netty Epoll Server IO #9/DEBUG] [FML]: FMLHandshakeServerState: $HandshakeAck:{3}->FMLHandshakeServerState$4:COMPLETE
+[06:45:20] [Netty Epoll Server IO #9/DEBUG] [FML]:   Next: DONE
+[06:45:20] [Netty Epoll Server IO #9/DEBUG] [FML]: FMLHandshakeServerState: $HandshakeAck:{4}->FMLHandshakeServerState$5:DONE
+[06:45:20] [Server thread/INFO] [FML]: [Server thread] Server side modded connection established
+[06:45:20] [Server thread/INFO] [net.minecraft.server.management.PlayerList]: ipk[/100.36.131.81:1323] logged in with entity id 212431 at (141.69999998807907, 59.0, -4.423879751016582)
+[06:45:20] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: ipk joined the game
+[06:45:20] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: ipk has made the advancement [Ice Bucket Challenge]
+[06:45:20] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: ipk has reached the goal [Sky's the Limit]
+[06:45:20] [Netty Epoll Server IO #9/DEBUG] [FML]: FMLHandshakeServerState: $HandshakeAck:{5}->FMLHandshakeServerState$5:DONE
+[06:45:46] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:46:14] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: [ipk: Set own game mode to Creative Mode]
+[06:46:31] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:47:03] [Server thread/INFO] [net.minecraft.network.NetHandlerPlayServer]: ipk lost connection: Disconnected
+[06:47:03] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: ipk left the game
+[06:47:16] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world
+[06:48:01] [Server thread/DEBUG] [FML]: Gathering id map for writing to world save world

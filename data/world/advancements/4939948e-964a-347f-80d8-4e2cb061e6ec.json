@@ -1,7 +1,7 @@
 {
-  "minecraft:recipes/transportation/acacia_boat": {
+  "minecraft:recipes/tools/flint_and_steel": {
     "criteria": {
-      "entered_water": "2022-02-23 07:38:31 +0000"
+      "has_obsidian": "2022-02-28 06:45:20 +0000"
     },
     "done": true
   },
@@ -18,6 +18,30 @@
     "done": true
   },
   "minecraft:recipes/transportation/birch_boat": {
+    "criteria": {
+      "entered_water": "2022-02-23 07:38:31 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/chest": {
+    "criteria": {
+      "has_lots_of_items": "2022-02-28 06:45:20 +0000"
+    },
+    "done": true
+  },
+  "minecraft:end/elytra": {
+    "criteria": {
+      "elytra": "2022-02-28 06:45:20 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2022-02-28 06:45:20 +0000"
+    },
+    "done": true
+  },
+  "minecraft:recipes/transportation/acacia_boat": {
     "criteria": {
       "entered_water": "2022-02-23 07:38:31 +0000"
     },
@@ -44,6 +68,12 @@
   "minecraft:recipes/building_blocks/chiseled_stonebrick": {
     "criteria": {
       "has_stonebrick": "2022-02-28 04:48:10 +0000"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2022-02-28 06:45:20 +0000"
     },
     "done": true
   },
