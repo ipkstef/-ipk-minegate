@@ -36,11 +36,14 @@ Please make sure to update tests as appropriate.
 ## Mods
 
 * [Stargate-Network](https://www.curseforge.com/minecraft/mc-mods/stargate-network)
-    * [Guide(Youtube)]([Stargate-Network](https://www.curseforge.com/minecraft/mc-mods/stargate-network)
+    * [Guide(Youtube)](https://www.curseforge.com/minecraft/mc-mods/stargate-network)
+
 
 * [Davincis-Vessels](https://www.curseforge.com/minecraft/mc-mods/davincis-vessels)
     * [Guide(Youtube)](https://www.youtube.com/watch?v=XaShDt9TYLk)
 
+
 * [MalisisCore](https://www.curseforge.com/minecraft/mc-mods/malisiscore)
+
 
 * [MovingWorld](https://www.curseforge.com/minecraft/mc-mods/movingworld)
