@@ -15,7 +15,7 @@ services:
       MOTD: "A Docker power Minecraft server, inspired by StarGate"
       MAX_PLAYERS: "20"
       WORLD_NAME: "SG1:S0E1"
-      RCON_PASSWORD: "password"
+      RCON_PASSWORD: "sand101"
 
 
 
