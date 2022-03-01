@@ -10,6 +10,7 @@ services:
       TYPE: "FORGE"
       VERSION: "1.12.2"
       MEMORY: "4G"
+      Level_TYPE: "BIOMESOP"
     volumes:
       - ./data:/data
 
