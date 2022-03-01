@@ -11,6 +11,14 @@ services:
       VERSION: "1.12.2"
       MEMORY: "4G"
       LEVEL_TYPE: "BIOMESOP"
+      ONLINE_MODE: "FALSE"
+      MOTD: "A Docker power Minecraft server, inspired by StarGate"
+      MAX_PLAYERS: "20"
+      WORLD_NAME: "SG1:S0E1"
+      RCON_PASSWORD: "password"
+
+
+
     volumes:
       - ./data:/data
 
