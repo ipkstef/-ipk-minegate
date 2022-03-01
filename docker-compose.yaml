@@ -9,7 +9,7 @@ services:
       EULA: "TRUE"
       TYPE: "FORGE"
       VERSION: "1.12.2"
-      MEMORY: "4G"
+      MEMORY: "8G"
       LEVEL_TYPE: "BIOMESOP"
       ONLINE_MODE: "FALSE"
       MOTD: "A Docker power Minecraft server, inspired by StarGate"
