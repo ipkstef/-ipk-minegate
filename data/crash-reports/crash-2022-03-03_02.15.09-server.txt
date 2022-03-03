@@ -1,0 +1,65 @@
+---- Minecraft Crash Report ----
+
+WARNING: coremods are present:
+  MovingWorldCore (movingworld-1.12-6.353-full.jar)
+  MalisisCorePlugin (malisiscore-1.12.2-6.5.3-SNAPSHOT.jar)
+Contact their authors BEFORE contacting forge
+
+// Sorry :(
+
+Time: 3/3/22 2:15 AM
+Description: Exception in server tick loop
+
+Duplicate Mods:
+	voxelmap : /data/./mods/forgemod_VoxelMap-1.9.27_for_1.12.2.jar
+	voxelmap : /data/./mods/forgemod_VoxelMap-1.9.27_for_1.12.2.jar
+
+net.minecraftforge.fml.common.DuplicateModsFoundException
+	at net.minecraftforge.fml.common.Loader.identifyDuplicates(Loader.java:466)
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:428)
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568)
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98)
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486)
+	at java.lang.Thread.run(Thread.java:748)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.12.2
+	Operating System: Linux (amd64) version 5.14.8-arch1-1
+	Java Version: 1.8.0_191, Oracle Corporation
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 7908829512 bytes (7542 MB) / 8232370176 bytes (7851 MB) up to 8232370176 bytes (7851 MB)
+	JVM Flags: 2 total; -Xmx8G -Xms8G
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP 9.42 Powered by Forge 14.23.5.2859 12 mods loaded, 0 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+
+	| State | ID                                           | Version               | Source                                        | Signature                                |
+	|:----- |:-------------------------------------------- |:--------------------- |:--------------------------------------------- |:---------------------------------------- |
+	|       | minecraft                                    | 1.12.2                | minecraft.jar                                 | None                                     |
+	|       | mcp                                          | 9.42                  | minecraft.jar                                 | None                                     |
+	|       | FML                                          | 8.0.99.99             | forge-1.12.2-14.23.5.2859.jar                 | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	|       | forge                                        | 14.23.5.2859          | forge-1.12.2-14.23.5.2859.jar                 | e3c3d50c7c986df74c645c0ac54639741c90a557 |
+	|       | com.elytradev.movingworld.common.asm.coremod |                       | minecraft.jar                                 | None                                     |
+	|       | voxelmap                                     | 1.9.25                | forgemod_VoxelMap-1.9.27_for_1.12.2.jar       | None                                     |
+	|       | biomesoplenty                                | 7.0.1.2445            | BiomesOPlenty-1.12.2-7.0.1.2445-universal.jar | None                                     |
+	|       | davincisvessels                              | @DVESSELSVER@         | davincisvessels-1.12-6.355-full.jar           | None                                     |
+	|       | voxelmap                                     | 1.9.25                | forgemod_VoxelMap-1.9.27_for_1.12.2.jar       | None                                     |
+	|       | malisiscore                                  | 1.12.2-6.5.3-SNAPSHOT | malisiscore-1.12.2-6.5.3-SNAPSHOT.jar         | None                                     |
+	|       | movingworld                                  | 1.12-6.353            | movingworld-1.12-6.353-full.jar               | None                                     |
+	|       | sgcraft                                      | 2.0.3                 | SGCraft-2.0.5.jar                             | None                                     |
+
+	Loaded coremods (and transformers): 
+MovingWorldCore (movingworld-1.12-6.353-full.jar)
+  
+MalisisCorePlugin (malisiscore-1.12.2-6.5.3-SNAPSHOT.jar)
+  
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
