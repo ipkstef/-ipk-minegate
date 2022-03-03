@@ -1,4 +1,10 @@
 addresses:
-    ABCD-EFG-HI:
-        name: Descriptive Name Here
+    U4OT-0A6-I6:
+        name: Mount Everest
+        locked: false
+    NRKG-R9Y-GU:
+        name: Atlantis Outpost
+        locked: false
+    QHMC-F51-U5:
+        name: Cave
         locked: false

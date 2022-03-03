@@ -4,5 +4,17 @@
     "name": "ipk",
     "level": 4,
     "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "148a848f-da2c-39d1-972b-adefeb17d530",
+    "name": "arihotty",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "cecd78b4-4977-3b08-bc78-742c257b2c20",
+    "name": "ipkari",
+    "level": 4,
+    "bypassesPlayerLimit": false
   }
 ]
