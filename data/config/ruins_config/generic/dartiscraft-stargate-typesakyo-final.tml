@@ -1,0 +1,257 @@
+
+# Created by Ruins mod version 17.2 Ingame Parser
+# authoring Player: Dartis_Xui
+
+# TEMPLATE PARAMETER SETTINGS:
+#
+# criterion expression specifying mod ids required to load template
+# may include plus (AND), minus (AND NOT), comma (OR), and parentheses
+# all required mods listed must be present; no prohibited mods can be
+requiredMods=
+#
+# likelihood this template will be chosen relative to all others
+# e.g., a weight=6 template is chosen 3X as often as one with weight=2
+weight=3
+#
+# list of dimensions in which this template may spawn, even if generic
+# one or more dimension names, separated by commas (blank = all)
+dimensionsToSpawnIn=
+#
+# list of other biomes in which this template may spawn
+# biome corresponding to directory is always assumed, listed or not
+# generic templates should leave this list empty
+biomesToSpawnIn=
+#
+# criterion expression specifying types of biome where template spawns
+# this is in addition to those explicitly listed as biomesToSpawnIn
+# generic templates should leave this list empty
+biomeTypesToSpawnIn=
+#
+# list of biomes in which this template may not spawn
+# takes precedence over biomeTypesToSpawnIn, but NOT biomesToSpawnIn
+# should be empty if biomeTypesToSpawnIn is empty
+biomesToNotSpawnIn=
+#
+# depth template is pushed down into the surface when built
+# offset is min/max range of random additional bury depth
+embed_into_distance=0
+random_height_offset=0,0
+#
+# whitelist/blacklist of block types on which template may be built
+# specify one, not both; leave the other empty (both empty = allow all)
+acceptable_target_blocks=
+unacceptable_target_blocks=flowing_water,water,flowing_lava,lava
+#
+# size of template (#layers, #rows per layer, #blocks per row)
+dimensions=6,22,11
+#
+# max number of missing blocks allowed in surface beneath template
+allowable_overhang=0
+#
+# depth/height limit affected by terrain leveling
+# also maximum bumpiness tolerated in surface beneath template
+max_leveling=2
+#
+# padding applied to all sides of template horizontal footprint
+# expands area affected by terrain leveling (-1 = no leveling)
+leveling_buffer=0
+#
+# do not rotate template randomly when built (1 = no rotation)
+preventRotation=1
+#
+# treat water/lava blocks as air and protect them from rule0 (1 = yes)
+preserve_water=0
+preserve_lava=0
+#
+# minimum distance this template must have from instances of itself
+uniqueMinDistance=280
+#
+# min/max distances this template can be from world spawn (0 = no limit)
+# only applies to overworld--i.e., dimension 0
+spawnMinDistance=0
+spawnMaxDistance=0
+#
+# other template built nearby whenever this one is
+# syntax: <name>;<relativeX>;<maxYdifference>;<relativeZ>[;<chance>]
+# may be used more than once to specify multiple neighbors
+adjoining_template=
+
+rule1=0,100,additional_lights:fire_pit_l_stone_bricks-0
+rule2=0,100,IInventory;sgcraft:stargatecontroller;sgcraft:naquadah#64#0#0-1
+rule3=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{boxes:[[I;0,0,11,16,16,16],[I;0,0,0,16,16,10]],block:"minecraft:stonebrick"}],id:"minecraft:littletilestileentity"}-0
+rule4=0,100,minecraft:stone_brick_stairs-0
+rule5=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{boxes:[[I;0,0,0,16,16,1],[I;0,0,1,1,16,16],[I;1,0,2,16,16,16]],block:"minecraft:stonebrick"}],id:"minecraft:littletilestileentity"}-0
+rule6=0,100,minecraft:monster_egg-2
+rule7=0,100,minecraft:monster_egg-0
+rule8=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,1,16,16,16],block:"minecraft:stonebrick"}],id:"minecraft:littletilestileentity"}-0
+rule9=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,1,1,1,24],block:"minecraft:stonebrick"}],grid:1,id:"minecraft:littletilestileentity"}-0
+rule10=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{boxes:[[I;0,0,0,14,1,16],[I;0,1,0,16,16,16]],block:"minecraft:stonebrick"}],id:"minecraft:littletilestileentity"}-0
+rule11=0,100,minecraft:stonebrick-0
+rule12=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,7,8,8],block:"minecraft:stonebrick"}],grid:8,id:"minecraft:littletilestileentity"}-0
+rule13=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,1,1,1,26],block:"minecraft:stonebrick"}],grid:1,id:"minecraft:littletilestileentity"}-0
+rule14=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;1,0,0,8,8,8],block:"minecraft:stonebrick"}],grid:8,id:"minecraft:littletilestileentity"}-0
+rule15=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;1,0,0,16,16,16],block:"minecraft:stonebrick"}],id:"minecraft:littletilestileentity"}-0
+rule16=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,15],block:"minecraft:stonebrick"}],id:"minecraft:littletilestileentity"}-0
+rule17=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:naquadah",Count:64b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:5,slot0:{ForgeCaps:{"regeneration:arch":{arch_status:"NORMAL_ITEM",skinType:"STEVE",regenAmount:0,skin:"NONE",trait:"regeneration:boring"}},id:"sgcraft:zpm",Count:1b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:naquadah",Count:64b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:naquadah",Count:32b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:naquadah",Count:32b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:naquadah",Count:16b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:naquadah",Count:16b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:naquadah",Count:1b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:naquadah",Count:1b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:pdd",Count:1b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:gdo",Count:1b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:sgcorecrystal",Count:1b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:sgcontrollercrystal",Count:1b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"},teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,16,1],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot1:{id:"sgcraft:pegasus_upgrade",Count:1b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,15,1,16,16,15],[I;15,0,1,16,15,15],[I;0,0,1,1,15,15],[I;1,0,1,15,1,15],[I;1,1,2,15,15,13],[I;1,13,14,15,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,15,2],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,1,13,15,15,14],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;2,2,14,13,3,15],[I;2,3,14,3,12,15],[I;13,2,14,14,12,15],[I;3,11,14,13,12,15]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,8,14,10,9,15],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;5,8,14,7,9,15],[I;6,6,14,11,7,15],[I;8,7,14,12,8,15],[I;4,4,14,5,10,15],[I;5,5,14,6,7,15]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;5,7,14,8,8,15],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;6,5,14,9,6,15],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,0,15,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;0,0,0,1,1,1,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:0,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"}-0
+rule18=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,1,1,1,32],block:"minecraft:stonebrick"}],grid:1,id:"minecraft:littletilestileentity"}-0
+rule19=0,100,additional_lights:fire_for_fire_pit_l-0
+rule20=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,4,3,4,34],block:"minecraft:stonebrick"}],grid:4,id:"minecraft:littletilestileentity"}-0
+rule21=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{boxes:[[I;0,6,0,3,8,8,34,0,0,1076538027,1073741824],[I;3,0,0,8,8,8],[I;0,0,0,3,6,8]],block:"minecraft:stonebrick"}],grid:8,id:"minecraft:littletilestileentity"}-0
+rule22=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{boxes:[[I;3,0,0,8,8,8],[I;0,6,0,3,8,8,34,0,0,1076538027,1073741824],[I;0,0,0,3,6,8]],block:"minecraft:stonebrick"}],grid:8,id:"minecraft:littletilestileentity"}-0
+rule23=0,100,teBlock;littletiles:blocklittletiles;{tiles:[{box:[I;0,0,0,16,1,16],block:"minecraft:stonebrick",structure:{tiles:[[I;0,0,0,21]],stackSizeLimit:64,invisibleStorage:1b,lastSlot:4,numberOfSlots:4,main:1b,id:"storage",inventory:{size:4,slot0:{id:"sgcraft:naquadah",Count:64b,Damage:0s}},inventorySize:196}},{boxes:[[I;0,1,0,1,15,16],[I;1,1,0,16,15,1],[I;1,1,15,16,15,16],[I;15,1,1,16,15,15],[I;1,2,1,15,13,15],[I;1,14,1,3,15,15]],block:"minecraft:stonebrick",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{invisible:1b,box:[I;1,1,1,15,2,15],block:"littletiles:ltstorageblocktile",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;1,13,1,15,14,15],block:"minecraft:concrete:15",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;13,14,3,14,15,14],[I;4,14,13,13,15,14],[I;4,14,2,14,15,3],[I;4,14,3,5,15,13]],block:"thermalfoundation:storage_alloy:1",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;7,14,6,8,15,9],block:"minecraft:stained_glass:14",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{boxes:[[I;7,14,9,8,15,11],[I;9,14,5,10,15,10],[I;8,14,4,9,15,8],[I;6,14,11,12,15,12],[I;9,14,10,11,15,11]],block:"minecraft:stained_glass:4",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;8,14,8,9,15,11],block:"minecraft:stained_glass:5",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;10,14,7,11,15,10],block:"minecraft:stained_glass:11",structure:{coord:[I;0,0,0],id:[I;0,0,0],type:0}},{box:[I;0,15,0,16,16,16],block:"minecraft:stonebrick",structure:{duration:50,tiles:[[I;0,0,0,1]],axisCenter:[I;1,0,-16,3,2,-14,16],interpolation:0,degree:90.0d,activateParent:0b,main:1b,id:"door",axis:2,rot-type:1,events:[],disableRightClick:0b}}],id:"minecraft:littletilestileentity"}-0
+rule24=0,100,sgcraft:stargatering-1
+rule25=0,100,sgcraft:stargatering-0
+rule26=0,100,IInventory;sgcraft:stargatebase;minecraft:monster_egg#1#2#0+minecraft:monster_egg#1#2#1+minecraft:monster_egg#1#2#2+minecraft:monster_egg#1#2#3+minecraft:monster_egg#1#2#4-1
+rule27=0,100,additional_lights:fire_pit_s_stone_bricks-0
+rule28=0,100,additional_lights:fire_for_fire_pit_s-0
+
+layer
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,1,0,0,0,1,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,1,0,0,0,1,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,2,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,1,0,0,0,1,0,0,0
+0,0,0,5,4,4,4,3,0,0,0
+0,0,0,8,11,11,11,3,0,0,0
+0,13,12,11,11,11,11,11,10,9,0
+0,13,11,11,11,11,11,11,11,9,0
+0,13,15,11,11,11,11,11,14,9,0
+0,0,0,17,11,11,11,16,0,0,0
+0,0,0,18,18,18,18,18,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,19,0,0,0,19,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,19,0,0,0,19,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,19,0,0,0,19,0,0,0
+0,0,0,20,0,0,0,20,0,0,0
+0,0,0,22,4,4,4,21,0,0,0
+0,0,13,0,11,23,11,11,9,0,0
+0,0,13,24,25,26,25,24,9,0,0
+0,0,13,11,11,11,11,11,9,0,0
+0,0,0,18,18,18,18,18,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,27,0,0,0,27,0,0,0
+0,0,0,25,0,0,0,25,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,28,0,0,0,28,0,0,0
+0,0,0,24,0,0,0,24,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,25,0,0,0,25,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
+layer
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,24,25,24,25,24,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0
+endlayer
+
