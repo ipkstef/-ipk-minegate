@@ -10,7 +10,7 @@ services:
       TYPE: "FORGE"
       VERSION: "1.12.2"
       MEMORY: "8G"
-      LEVEL_TYPE: "BIOMESOP"
+      LEVEL_TYPE: "AMPLIFIED"
       ONLINE_MODE: "FALSE"
       MOTD: "A Docker power Minecraft server, inspired by StarGate"
       MAX_PLAYERS: "20"
