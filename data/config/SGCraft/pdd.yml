@@ -22,8 +22,4 @@ addresses:
         locked: true
     5891-GWO-8W:
         name: Descriptive Name Here
-        locked: true        
-
-
-
-
+        locked: true
